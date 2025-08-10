@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT検査前休薬指示アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CT検査前休薬指示アプリ</h1>
+        <p>CT検査日を入力し、ビグアナイド系薬の休薬指示を確認します。</p>
+        <div class="input-section">
+            <label for="ctDate">CT検査日:</label>
+            <input type="date" id="ctDate">
+            <label for="drugName">薬の名前:</label>
+            <input type="text" id="drugName" value="ビグアナイド系薬">
+            <button id="calculateBtn">休薬指示を計算</button>
+        </div>
+        <div class="results-section">
+            <h2>休薬指示</h2>
+            <div id="drugHolidayInfo">
+                <!-- JavaScript will populate this -->
+            </div>
+            <h2>Difyからの応答</h2>
+            <div id="difyResponseContent">
+                <!-- Dify response will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
